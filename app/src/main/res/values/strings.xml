@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Week02Day02 app</string>
+    <string name="start_form_ro_register_car">Start form ro register car</string>
+    <string name="enter_the_model">Enter the model</string>
+    <string name="enter_year">Enter year</string>
+    <string name="automatic">Automatic</string>
+    <string name="manual">Manual</string>
+    <string name="transmission">Transmission</string>
+    <string name="enter_engine_size">Enter engine size</string>
+    <string name="restart">Restart</string>
+    <string name="submit">Submit</string>
+</resources>

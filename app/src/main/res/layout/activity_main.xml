@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/tvMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Toyota"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@id/tvModels"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/toyota"
+        app:layout_constraintStart_toStartOf="@id/tvMake"
+        app:layout_constraintTop_toBottomOf="@+id/tvMake" />
+
+    <TextView
+        android:id="@+id/tvModels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Toyota model  xlm2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvMake"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="2019"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toEndOf="@id/imgMake"
+        app:layout_constraintTop_toBottomOf="@+id/tvModels" />
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:text="Blue"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMake" />
+
+    <ImageView
+        android:id="@+id/imgColor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:src="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvColor" />
+
+    <TextView
+        android:id="@+id/tvEngineSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Engine size\n     V300"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgColor"
+        app:layout_constraintStart_toStartOf="@id/tvModels"
+        app:layout_constraintTop_toBottomOf="@id/tvYear"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTransmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Automatic"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@id/tvEngineSize"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toEndOf="@id/imgColor"
+        app:layout_constraintTop_toBottomOf="@id/imgColor" />
+
+    <ImageView
+        android:id="@+id/imgTransmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/automatic"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/tvTransmission"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransmission" />
+
+    <Button
+        android:id="@+id/btnStartForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/start_form_ro_register_car"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/imgTransmission"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
