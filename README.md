@@ -1,5 +1,8 @@
 # week02Day02App
 
+ The research of this day can be found in:
+https://github.com/heinerthebestMobileApps/week02Day02App/blob/master/Week02Day02%20Research.pdf
+ 
  In this app we have a button that will start an activity for result and start a CarResgisterationActivity.
  
  ![github-small](https://github.com/heinerthebestMobileApps/week02Day02App/blob/master/app/src/main/res/drawable/01.jpg)
